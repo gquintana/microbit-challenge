@@ -10,3 +10,4 @@ Recueil d'exercices de programmation avec une carte Micro:bit.
 ## Carte + composants électronique
 
 * link:diode/index.adoc[Diode]: Allumer une diode avec la carte
+* link:moteur-simple/index.adoc[Moteur]: Piloter un moteur à courant continu avec la carte

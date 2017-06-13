@@ -1,4 +1,4 @@
-# Boussole
+# Diode
 
 Allumer et éteindre une diode lorsqu'on appuie sur un bouton.
 
