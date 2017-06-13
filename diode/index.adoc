@@ -1,0 +1,48 @@
+# Boussole
+
+Allumer et éteindre une diode lorsqu'on appuie sur un bouton.
+
+## Ingrédients
+
+* Basique
+** Montrer nombre
+* Entrées
+** Lorsque le bouton A est pressé
+* Logique
+** Si/Alors/Sinon
+** Opérateur =
+* Variables
+* Broches (Avancé)
+** Ecrire en numérique la broche P0 à 0
+* Composants
+** Diode électroluminescente appelée LED
+** Résistance de 330&Omega; ou plus
+
+## Montage
+
+
+image:diode-led.svg[Schema diode LED,float="left"]
+La diode est un composant polarisé:
+pour qu'elle s'allume, il faut connecter la cathode (patte courte = borne -) à la borne Gnd de la carte Microbit,
+et l'anode (patte longue = borne +) à la broche P0 (ou P1 ou ..) via une résistance.
+
+WARNING: La diode doit impérativement être protégée par une résistance, sinon elle va griller!
+
+image:montage.svg[Montage]
+
+## Recette
+
+1. Lorsque le bouton A est pressé, allumer la diode: écrire en numérique la broche P0 à 1.
+  Lorsque le bouton B est pressé, éteindre la diode: écrire en numérique la broche P0 à 0.
+2. Utiliser le même bouton A pour allumer et éteindre la diode:
+  on appuie une fois la diode s'allume, on réappuie dessus, la diode s'éteint.
+   a. Créer un variable `allumee` qui vaudra 1 si la diode est allumée et 0 si elle est éteinte.
+   b. Lorsque le bouton A est pressé, si `allumee` vaut 1 alors mettre `allumee` à 0 et inversement.
+      Afficher `allumee` sur l'afficheur pour vérifier.
+   c. Ecrire en numérique la broche P0 avec la valeur de `allumee`.
+
+## Plus loin
+
+* Faire clignoter la diode
+* Refaire plusieurs fois le montage diode + résistance en se connectant successivement aux broches P0, P1, P2.
+  Faire un chenillard: allumer successivement chacune des 3 LED pour donner l'impression que la lumière se déplace de LED en LED.

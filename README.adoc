@@ -1,0 +1,12 @@
+# Micro:bit Challenge
+
+Recueil d'exercices de programmation avec une carte Micro:bit.
+
+## Carte seule
+
+* link:de/index.adoc[Dé]: Transforme la carte en dé
+* link:boussole/index.adoc[Boussole]: Transforme la carte en boussole
+
+## Carte + composants électronique
+
+* link:diode/index.adoc[Diode]: Allumer une diode avec la carte

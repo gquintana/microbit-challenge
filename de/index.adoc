@@ -1,0 +1,29 @@
+# Boussole
+
+Transformer la carte Microbit en un dé.
+
+## Ingrédients
+
+* Basique
+** Montrer nombre
+** Montrer icône (show icon)
+* Entrée
+** Lorsque secouer
+* Math
+** Choisir de entre 0 à 4: Prendre un nombre au hasard entre 0 et 4
+** Opérateur `+`
+* Variables
+** Définir item à
+* Logique
+** Si Alors
+** Operateur >
+
+
+## Recette
+
+1. Lorsqu'on secoue la carte, montrer un nombre au hasard entre 0 et 6.
+2. Lorsqu'on secoue la carte, montrer un nombre au hasard entre 1 et 6.
+  Pour avoir un nombre au hasard entre 1 et 6,
+  il suffit de prendre un nombre au hasard entre 0 et 5 et d'ajouter +1 à ce nombre.
+3. Stocker le nombre au hasard dans une variable N.
+   Afficher le nombre N, puis si N>5 afficher un cœur.

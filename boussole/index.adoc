@@ -1,0 +1,38 @@
+# Boussole
+
+Transformer la carte Micro:bit en une boussole.
+
+## Ingrédients
+
+* Basique
+** Au démarrage
+** Toujours
+** Montrer LEDs
+* Entrées
+** Direction de la boussole (°): retourne un angle en degrés compris en 0° et 360°.
+** Calibrer la boussole (calibrate compass): initialise la boussole.
+  Micro:bit afficher le message "Draw circle", il faut bouger Micro:bit jusqu'à obtenir un cercle.
+* Logique
+** Si alors (sinon)
+** < >
+
+## Recette
+
+1. Au démarrage, initialiser la boussole
+2. Lorsque la *direction de la boussole* donne un angle < 180° afficher un N (Nord),
+  sinon afficher S (Sud).
+3. Lorsque la *direction de la boussole* donne un angle compris entre 90° et 180° afficher E (Est).
+4. Lorsque la *direction de la boussole* donne un angle compris entre 180° et 270° afficher W (Ouest).
+5. Utiliser l'engrenage sur la bloc *Si/Sinon* pour fusionner les *Sinon Si* .
+  Réorganiser le programme pour un résultat identique.
+6. Améliorer le programme, pour que les bornes soient plus justes:
+
+[cols=">,>,<"]
+|=======
+|(0°) |45°   |Nord
+|45°  |135°  |Est
+|135° |225°  |Sud
+|225° |315°  |Ouest
+|315° |(360°)|Nord
+|=======
+
